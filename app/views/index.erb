@@ -1,13 +1,12 @@
 <div class="container">
-  <h1>Deaf Grandma</h1>
-  <% if @grandma %>
-    <p>Grandma says: "<span id="grandma_says"><%= @grandma %></span>"</p>
-  <% end %>
+  <h1>Java Racer</h1>
 
-  <form action="/grandma" method="post">
-    Say something to Grandma:
-    <br>
-    <input type="text" name="user_input">
-    <input type="submit" value="Say it!">
-  </form>
+  <form id="login" action="/" method="POST">
+    <label for="player_email">Email:</label>
+    <input id ="player_email" type="text" name="email" placeholder="your@email.com"><br><br>
+    <label for="player_password">Password:</label>
+    <input id ="player_password" input type="password" name="password" placeholder="*******"><br><br>
+    <input id="submit" type="submit" name='Submit'><br>
+    <p>New user? <a href="/signup">Sign up here</a></p>
 </div>
+

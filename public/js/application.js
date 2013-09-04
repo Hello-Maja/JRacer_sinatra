@@ -1,7 +1,38 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  // ('#GO').click(function() {
+    console.log("HELLO")
+    $(document).on('keyup', function(event) { 
+      
+      var code = event.keyCode;
+      
+      var speed = "+=50px"
+      if(code == 80) {
+        $('#racer1').animate({left: speed}, 50);
+        console.log("r1:" + $('#racer1').css('left'))
+      };
+      if (code == 81) {
+        $('#racer2').animate({left: speed}, 50);
+        console.log("r2:" + $('#racer2').css('left'))
+      };
+
+      if (  parseFloat($('#racer1').css('left')) >= 800  ) { 
+        winner = "racer1";
+        window.location("/winner/1");
+
+        $('#racer1').css("left", "0px");
+        $('#racer2').css("left", "0px");
+      };
+
+      if (  parseFloat($('#racer2').css('left')) >= 800  ) { 
+        winner = "racer2" 
+        window.location("/winner/2");
+
+        $('#racer1').css("left", "0");
+        $('#racer2').css("left", "0");
+      };
+      
+    });
+  // };
 });
+

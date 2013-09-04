@@ -18,10 +18,10 @@ body {
   padding-top: 5px;
 }
 
-#racer1 {
+div#racer1 {
 
-  background-image: url('racer.gif');
-  
+/*  background-image: url('http://localhost:9393/images/racer.gif');*/
+  background-color: blue;
   background-repeat: no-repeat;
   width: 40px;
   height: 20px;
@@ -30,8 +30,8 @@ body {
   display: block;
 }
 
-#racer2 {
-  background-image: url('racer.gif');
+div#racer2 {
+  background-image: url('images/racer.gif');
   
   background-repeat: no-repeat;
   width: 40px;

@@ -1,0 +1,28 @@
+<div class="container">
+
+<p>Here's the user id<%=@player_id%></p>
+
+
+<h1 class="play">Enter an opponent name and start playing!</h1>
+
+<form id="play" action="/racer/<%=@player_id%>" method="POST">
+<input class="submit" type="submit" value="Start playing">
+</form>
+
+  <h2 class="play">Java Racer Stats</h2>
+  <!-- <div class="statcontainer"> -->
+    <table class="center">
+        <tr> 
+          <th>Game Number</th>
+          <th>Winner</th>
+          <th>Other Player</th>
+          <th>Time</th>
+        </tr>
+      <!-- Each row of user data-->
+       
+    </table>
+<!--   </div> -->
+</div>
+
+
+

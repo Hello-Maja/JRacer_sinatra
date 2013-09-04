@@ -1,3 +1,4 @@
+$function JavaRacer(){
 $(document).ready(function() {
 
   // ('#GO').click(function() {
@@ -35,3 +36,4 @@ $(document).ready(function() {
     });
   // };
 });
+}

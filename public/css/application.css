@@ -7,3 +7,58 @@
 th {
   text-align: left;
 }
+
+body {
+  display: block;
+}
+
+#racetrack {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 820px;
+  height: auto;
+  border: 10px solid red;
+  
+}
+
+.racerstrip {
+  border: 1px solid blue;
+  margin: 5px;
+  padding-top: 5px;
+}
+
+div#racer1 {
+
+  background-image: url('http://localhost:9393/images/racer.gif');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  left: 0px;
+  display: block;
+}
+
+div#racer2 {
+  background-image: url('http://localhost:9393/images/racer.gif');
+  
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  left:0px;
+  display: block;
+}
+
+#GO {
+  border: 1px solid black;
+  position: absolute;
+  top: 300px;
+  right: 200px;
+  display: block;
+  height: 30px;
+  width: 120px;
+}
+
+
+

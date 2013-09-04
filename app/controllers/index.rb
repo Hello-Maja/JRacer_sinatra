@@ -1,9 +1,15 @@
+enable :sessions
+# GET ===================================
+
 get '/' do
-  @grandma = params[:grandma]
-  # Look in app/views/index.erb
   erb :index
 end
 
-post '/grandma' do
-  "Implement the /grandma route yourself.<br>Params: <code>#{params.inspect}</code>"
+# POST ==================================
+
+post '/' do
+    @player_id = Player.find_by(email: params[:email]).id
+  
+    # redirect "/play/"
+    redirect "/play/#{@player_id}"
 end
