@@ -6,7 +6,7 @@ gem 'pg'
 # Sinatra driver
 gem 'sinatra'
 gem 'sinatra-contrib'
-gem 'bcrypt-ruby'
+gem 'bcrypt-ruby', '3.0.0'
 
 # Use Thin for our web server
 gem 'thin'
